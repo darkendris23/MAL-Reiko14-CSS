@@ -1,0 +1,42 @@
+/* 
+ANIMATED CUSTOM CURSOR
+*/
+
+body *, :not(*) {
+animation-name: DimRed;
+animation-duration: 1s !important;
+animation-iteration-count: infinite;
+}
+
+@keyframes DimRed {
+11% {cursor: url(https://imgur.com/t4bm08n.png), auto;}
+14% {cursor: url(https://imgur.com/9CcdVjK.png), auto;}
+17% {cursor: url(https://imgur.com/VqBrtCx.png), auto;}
+20% {cursor: url(https://imgur.com/VqBrtCx.png), auto;}
+23% {cursor: url(https://imgur.com/9jo8Ylo.png), auto;}
+26% {cursor: url(https://imgur.com/9imWwte.png), auto;}
+29% {cursor: url(https://imgur.com/HohwiAz.png), auto;}
+32% {cursor: url(https://imgur.com/eLjeqjp.png), auto;}
+35% {cursor: url(https://imgur.com/IOVyT7u.png), auto;}
+38% {cursor: url(https://imgur.com/XRKsNWS.png), auto;}
+41% {cursor: url(https://imgur.com/8qxe4fJ.png), auto;}
+44% {cursor: url(https://imgur.com/JEDJMJw.png), auto;}
+47% {cursor: url(https://imgur.com/sMmeS6V.png), auto;}
+50% {cursor: url(https://imgur.com/f3HIcKc.png), auto;}
+53% {cursor: url(https://imgur.com/hJc12Ik.png), auto;}
+56% {cursor: url(https://imgur.com/OgqNHZB.png), auto;}
+59% {cursor: url(https://imgur.com/0gqVQJK.png), auto;}
+62% {cursor: url(https://imgur.com/ktwzZuG.png), auto;}
+65% {cursor: url(https://imgur.com/6zbb4wu.png), auto;}
+68% {cursor: url(https://imgur.com/Tzv3kdK.png), auto;}
+71% {cursor: url(https://imgur.com/qtgHNb4.png), auto;}
+74% {cursor: url(https://imgur.com/3U6ZvDt.png), auto;}
+77% {cursor: url(https://imgur.com/G3Zt1HL.png), auto;}
+80% {cursor: url(https://imgur.com/6l3I7eg.png), auto;}
+83% {cursor: url(https://imgur.com/2SafCdz.png), auto;}
+86% {cursor: url(https://imgur.com/ExDmXnP.png), auto;}
+89% {cursor: url(https://imgur.com/18CaIwR.png), auto;}
+92% {cursor: url(https://imgur.com/wiaNYtP.png), auto;}
+95% {cursor: url(https://imgur.com/06RU47y.png), auto;}
+98% {cursor: url(https://imgur.com/LkVQnty.png), auto;}
+}
