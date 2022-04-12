@@ -5,30 +5,30 @@ By Reiko14
 
 @keyframes moveGradient {
   0% {
-    border-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) 1 !important;
+    border-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) 1;
   }
   12% {
-    border-image: linear-gradient(to right, #e2aa25, #b7c040, #8bd06d, #5edba0, #39e1cf, #35dde2, #4bd8ef, #69d2f5, #75c4ec, #7fb7df, #87aad1, #8b9dc1) 1 !important;
+    border-image: linear-gradient(to right, #e2aa25, #b7c040, #8bd06d, #5edba0, #39e1cf, #35dde2, #4bd8ef, #69d2f5, #75c4ec, #7fb7df, #87aad1, #8b9dc1) 1;
   }
   24% {
-    border-image: linear-gradient(to right bottom, #80c4e1, #50c2d0, #32bdaf, #47b683, #6baa52, #78a945, #85a737, #93a429, #8cb13d, #84bd52, #7bc968, #70d57f) 1 !important;
+    border-image: linear-gradient(to right bottom, #80c4e1, #50c2d0, #32bdaf, #47b683, #6baa52, #78a945, #85a737, #93a429, #8cb13d, #84bd52, #7bc968, #70d57f) 1;
   }
   36% {
-    border-image: linear-gradient(to bottom, #1a2a6c, #4d246e, #721866, #900358, #a50043, #b51c39, #c2332d, #ca4a1d, #da671c, #e8831d, #f49f22, #fdbb2d) 1 !important;
+    border-image: linear-gradient(to bottom, #1a2a6c, #4d246e, #721866, #900358, #a50043, #b51c39, #c2332d, #ca4a1d, #da671c, #e8831d, #f49f22, #fdbb2d) 1;
   }
   48% {
-    border-image: linear-gradient(to left bottom, #0cebeb, #00eae2, #00e9d8, #00e8cd, #00e6c2, #0de7bf, #18e9bb, #22eab7, #24efbb, #25f4be, #27fac2, #29ffc6) 1 !important;
+    border-image: linear-gradient(to left bottom, #0cebeb, #00eae2, #00e9d8, #00e8cd, #00e6c2, #0de7bf, #18e9bb, #22eab7, #24efbb, #25f4be, #27fac2, #29ffc6) 1;
   }
   60% {
-    border-image: linear-gradient(to left, #3a1c71, #642274, #862c75, #a33c75, #bc4f75, #cb5d75, #d86c75, #e47c76, #ec8876, #f49577, #faa278, #ffaf7b) 1 !important;
+    border-image: linear-gradient(to left, #3a1c71, #642274, #862c75, #a33c75, #bc4f75, #cb5d75, #d86c75, #e47c76, #ec8876, #f49577, #faa278, #ffaf7b) 1;
   }
   72% {
-    border-image: linear-gradient(to left top, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00) 1 !important;
+    border-image: linear-gradient(to left top, #ee0979, #fc1c62, #ff364a, #ff512f, #ff6a00) 1;
   }
   84% {
-    border-image: linear-gradient(to top, #00c3ff, #00dff7, #00f5c5, #82ff77, #ffff1c) 1 !important;
+    border-image: linear-gradient(to top, #00c3ff, #00dff7, #00f5c5, #82ff77, #ffff1c) 1;
   }
   100% {
-    border-image: linear-gradient(to right top, #ff00cc, #cd27c8, #9a33be, #6836ae, #333399) 1 !important;
+    border-image: linear-gradient(to right top, #ff00cc, #cd27c8, #9a33be, #6836ae, #333399) 1;
   }
 }
