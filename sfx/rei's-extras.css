@@ -1,0 +1,98 @@
+/* 
+   Reiko14's Design Add-ons v0.1
+      For personal use only!     
+*/
+/*====================================================================
+Requires: 
+  * Valeriolyndon's Clarity (works for both light and dark theme)
+  * Valeriolyndin's dataimagelinkbefore
+====================================================================*/
+
+@\import "animated-gradient-border.css";
+@\import "animated-background.css"
+
+/* Row Background */
+.list-table-data {
+  background-image: linear-gradient(to right top, #000000, #1a1a1a, #2c2c2c, #404040, #555555);
+}
+
+/*========== Row Border Effects Hover ================*/
+.list-table-data:hover:after {
+  height: 99% !important;
+  width: 99.8% !important;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+.list-table-data:after {
+  content:"";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border: 3px solid;
+  margin-left: -2px !important;
+  border-style:;
+  border-top-style: none;
+  border-bottom-style: none;
+  padding-bottom: -1px !important;
+  animation-name: borderGradient1;
+animation-duration: 5s !important;
+animation-iteration-count: infinite;
+transition: height 0.1s ease, width .2s ease 0.1s;
+z-index: -1;
+}
+/*====================================================*/
+
+/*============== Poster ==============================*/
+.list-item:hover .data.image a:before{
+  height: 270px !important;
+}
+.data.image a:before{
+  position: fixed !important;
+  top: auto !important;
+  left: auto !important;
+  width: 200px !important;
+  bottom: 25%;
+  right: 1%;
+  border-radius: 0px !important;
+  border-width: 3px;
+  border-style: solid;
+  animation-name: borderGradient1;
+animation-duration: 5s !important;
+animation-iteration-count: infinite;
+}
+/*====================================================*/
+
+/*============= Genre below poster ===================*/
+.list-table .list-table-data:hover .data.genre {
+  transition: .5s ease;
+  visibility: visible !important;
+  opacity: 1;
+}
+
+.list-table .list-table-data .data.genre{
+  position: fixed;
+  top: 75%;
+  right: 1%;
+  opacity: 0;
+  Background: #121212;
+  visibility: hidden;
+  margin: 0px !important;
+  padding: 3px 43px !important;
+  padding-top: 13px !important;
+  Background: black !solid;
+  z-index: 500;
+}
+.list-table .list-table-data .data.genre:after{
+  content:"Genre:";
+  position: fixed;
+  top: 75%;
+  right: 1%;
+  margin: 0px !important;
+  height: 20px !important;
+  width: 50px !important;
+  margin-right: 159px !important;
+  z-index: 600;
+}
+/*====================================================*/
