@@ -12,6 +12,9 @@ Requires:
 @\import "animated-background.css"
 
 /* Row Background */
+.list-item{
+  background: none !important;
+}
 .list-table-data {
   background-image: linear-gradient(to right top, #000000, #1a1a1a, #2c2c2c, #404040, #555555);
 }
