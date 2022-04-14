@@ -18,7 +18,7 @@ Requires:
 }
 
 
-.list-unit.all_anime { /* Anime List Container*/
+.list-unit.all_anime, .list-unit.watching, .list-unit.completed, .list-unit.onhold, .list-unit.dropped, .list-unit.plantowatch { /* Anime List Container*/
   width: 85% !important;
 }
 
