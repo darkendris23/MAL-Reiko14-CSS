@@ -8,46 +8,73 @@ Requires:
   * Valeriolyndin's dataimagelinkbefore
 ====================================================================*/
 
-@\import "animated-gradient-border.css";
-@\import "animated-background.css"
+@import "animated-gradient-border.css";
+@import "animated-background.css"
 
-/* Row Background */
-.list-item{
+ 
+.list-block { /* List Proper */
+  background: none;
+  margin-bottom: 50px;
+}
+
+
+.list-unit.all_anime { /* Anime List Container*/
+  width: 85% !important;
+}
+
+
+.data.status { /* Status Color */
+  width: 75px !important;
+  border-right: 2px black solid !important;
+}
+
+.list-table-data { /* Anime Row */
+    padding-right: 10px !important;
+    background-image: linear-gradient(to right top, #000000, #1a1a1a, #2c2c2c, #404040, #555555) !important;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+
+.list-item { /* The "More" contents in Anime Row */
+  background: #1a1a1a !important;
+  margin-left: 3px !important;
+}
+
+/* Row Border Effects Hover (includes"More" contents) */
+.list-item:after{
+  content: "";
+  /* For Clicking Through */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png);
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://upload.wikimedia.org/wikipedia/commons/8/89/HD_transparent_picture.png', sizingMethod='scale');
+  pointer-events: none;
   background: none !important;
-}
-.list-table-data {
-  background-image: linear-gradient(to right top, #000000, #1a1a1a, #2c2c2c, #404040, #555555);
-}
-
-/*========== Row Border Effects Hover ================*/
-.list-table-data:hover:after {
-  height: 99% !important;
-  width: 99.8% !important;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
-}
-
-.list-table-data:after {
-  content:"";
+  /*=======================*/
   position: absolute;
+  Border: 3px none;
+  left: 0%;
+  margin-left: -2.5px;
+  top: 50%;
+  margin-top: -3px;
   width: 0%;
   height: 0%;
-  border: 3px solid;
-  margin-left: -2px !important;
-  border-style:;
-  border-top-style: none;
-  border-bottom-style: none;
-  padding-bottom: -1px !important;
-  animation-name: borderGradient1;
-animation-duration: 5s !important;
-animation-iteration-count: infinite;
-transition: height 0.1s ease, width .2s ease 0.1s;
-z-index: -1;
+  z-index: -1;
+  animation: borderGradient1 5s ease-in-out infinite !important;
 }
-/*====================================================*/
 
-/*============== Poster ==============================*/
+.list-item:Hover:after {
+  width: 99.9%;
+  height: 99.9%;
+  top: 0px !important;
+  border-left-style: solid !important;
+  border-top-style: solid !important;
+  border-bottom-style: solid !important;
+  border-right-style: solid !important;
+  z-index: 1;
+  transition: border-left-style 0.1s, top 0.1s ease, height 0.1s ease, border-top-style 0.2s, border-bottom-style 0.2s, width .3s ease 0.1s, border-right-style 0.1s ease 0.3s, z-index 0s ease 1s;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/* Poster */
 .list-item:hover .data.image a:before{
   height: 270px !important;
 }
@@ -61,14 +88,12 @@ z-index: -1;
   border-radius: 0px !important;
   border-width: 3px;
   border-style: solid;
-  animation-name: borderGradient1;
-animation-duration: 5s !important;
-animation-iteration-count: infinite;
+  animation: borderGradient1 5s ease-in-out infinite !important;
 }
-/*====================================================*/
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-/*============= Genre below poster ===================*/
-.list-table .list-table-data:hover .data.genre {
+/* Genre below poster */
+.list-table .list-item:hover .data.genre {
   transition: .5s ease;
   visibility: visible !important;
   opacity: 1;
@@ -82,20 +107,33 @@ animation-iteration-count: infinite;
   Background: #121212;
   visibility: hidden;
   margin: 0px !important;
-  padding: 3px 43px !important;
-  padding-top: 13px !important;
+  padding: 6px 80px 6px 6px !important;
   Background: black !solid;
   z-index: 500;
 }
-.list-table .list-table-data .data.genre:after{
-  content:"Genre:";
-  position: fixed;
-  top: 75%;
-  right: 1%;
-  margin: 0px !important;
-  height: 20px !important;
-  width: 50px !important;
-  margin-right: 159px !important;
-  z-index: 600;
+
+.list-table .list-table-data .data.genre > span {
+  width: 85% !important;
 }
-/*====================================================*/
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/* Airing next to Genre */
+.data.airing-started, .data.airing-finished {
+  position:fixed !important;
+  top: 76% !important;
+  right: 0% !important;
+  z-index: 501;
+  visibility: hidden;
+  opacity: 0 !important;
+  transition: .0s ease;
+}
+
+.data.airing-finished{
+  top: calc(76% + 3%) !important;
+}
+
+.list-table .list-item:hover .data.airing-started, .list-table .list-item:hover .data.airing-finished{
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
