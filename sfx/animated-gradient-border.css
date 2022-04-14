@@ -3,6 +3,10 @@ Animated Gradient Border v0.1
 By Reiko14
 */
 
+:root {
+  --anim-config: 5s linear 1s infinite;
+}
+
 @keyframes borderGradient1 {
   4% {
     border-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) 1;
