@@ -107,7 +107,7 @@ Requires:
   Background: #121212;
   visibility: hidden;
   margin: 0px !important;
-  padding: 8px 80px 8px 6px !important;
+  padding: 10px 80px 10px 6px !important;
   Background: black !solid;
   z-index: 500;
 }
