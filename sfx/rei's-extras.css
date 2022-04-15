@@ -140,3 +140,36 @@
   opacity: 1 !important;
 }
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/* Category-Coloured Titles */
+.data.title .link:hover {
+	text-decoration: underline;
+}
+
+.list-item .data.watching ~ .title .link,
+.list-item .data.reading ~ .title .link {
+	/* Watching */
+	color: #2db039 !important;
+}
+
+.list-item .data.completed ~ .title .link {
+	/* Completed */
+	color: #26448f !important;
+}
+
+.list-item .data.onhold ~ .title .link {
+	/* On Hold */
+	color: #f1c83e !important;
+}
+
+.list-item .data.dropped ~ .title .link {
+	/* Dropped */
+	color: #a12f31 !important;
+}
+
+.list-item .data.plantowatch ~ .title .link,
+.list-item .data.plantoread ~ .title .link {
+	/* Planned */
+	color: #c3c3c3 !important;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
