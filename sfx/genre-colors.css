@@ -40,7 +40,7 @@
 .list-table-data .data.genre span a[href*="&genre=10"] {/*Fantasy*/
   color: var(--fantasy) !important;
 }
-.list-table-data .data.genre span a[href*="&genre=10"] {/*Henrai*/
+.list-table-data .data.genre span a[href*="&genre=12"] {/*Hentai*/
   color: var(--hentai) !important;
 }
 .list-table-data .data.genre span a[href*="&genre=14"] {/*Horror*/
