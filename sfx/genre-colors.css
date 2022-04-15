@@ -13,7 +13,7 @@
   --sci-fi: silver;
   --sports: brown;
   --sliceoflife: #b63;
-  --supernatural: #800080;
+  --supernatural: purple;
   --suspense: #f82;
   --yuri: lightpink;
   --yaoi: lightblue;
@@ -64,12 +64,12 @@
 .list-table-data .data.genre span a[href*="&genre=36"] {/*Slice of Life*/
   color: var(--sliceoflife) !important
 }
-.list-table-data .data.genre span a[href*="&genre=36"] {/*Supernatural*/
+.list-table-data .data.genre span a[href*="&genre=37"] {/*Supernatural*/
   color: var(--supernatural) !important
 }
 .list-table-data .data.genre span a[href*="&genre=41"] {/*Suspense*/
   color: var(--suspense) !important
 }
-.list-table-data .data.genre span a[href*="&genre=36"] {/*Gourmet*/
+.list-table-data .data.genre span a[href*="&genre=47"] {/*Gourmet*/
   color: var(--gourmet) !important
 }
