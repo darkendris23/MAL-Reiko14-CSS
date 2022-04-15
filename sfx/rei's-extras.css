@@ -12,7 +12,8 @@
 */
 
 @import "animated-gradient-border.css";
-@import "animated-background.css"
+@import "animated-background.css";
+@import "genre-colors.css";
 
  
 .list-block { /* List Proper */
