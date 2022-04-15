@@ -4,6 +4,8 @@
   --avant: orange;
   --comedy: yellow;
   --drama: violet;
+  --ecchi: gold;
+  --erotica: #b00bee;
   --fantasy: green;
   --gourmet: #edb;
   --hentai: deeppink;
@@ -36,6 +38,9 @@
 }
 .list-table-data .data.genre span a[href*="&genre=8"] {/*Drama*/
   color: var(--drama) !important
+}
+.list-table-data .data.genre span a[href*="&genre=9"] {/*Ecchi*/
+  color: var(--ecchi) !important
 }
 .list-table-data .data.genre span a[href*="&genre=10"] {/*Fantasy*/
   color: var(--fantasy) !important;
@@ -72,4 +77,7 @@
 }
 .list-table-data .data.genre span a[href*="&genre=47"] {/*Gourmet*/
   color: var(--gourmet) !important
+}
+.list-table-data .data.genre span a[href*="&genre=49"] {/*Erotica*/
+  color: var(--erotica) !important
 }
