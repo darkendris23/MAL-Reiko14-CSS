@@ -1,0 +1,71 @@
+:root{
+  --action: red;
+  --adventure: blue;
+  --avant: orange;
+  --comedy: yellow;
+  --drama: violet;
+  --fantasy: green;
+  --gourmet: #edb;
+  --horror: darkgreen;
+  --mystery: ghostwhite;
+  --romance: pink;
+  --sci-fi: silver;
+  --sports: brown;
+  --sliceoflife: #b63;
+  --supernatural: purple;
+  --suspense: #f82;
+  --yuri: lightpink;
+  --yaoi: lightblue;
+}
+
+.list-table-data .data.genre span a[href*="&genre=1"] {/*Action*/
+  color: var(--action) !important;
+}
+.list-table-data .data.genre span a[href*="&genre=2"] {/*Adventure*/
+  color: var(--adventure) !important;
+}
+.list-table-data .data.genre span a[href*="&genre=4"] {/*Comedy*/
+  color: var(--comedy) !important;
+}
+.list-table-data .data.genre span a[href*="&genre=5"] {/*Avant-garde*/
+  color: var(--avant) !important;
+}
+.list-table-data .data.genre span a[href*="&genre=7"] {/*Mystery*/
+  color: var(--mystery) !important;
+}
+.list-table-data .data.genre span a[href*="&genre=8"] {/*Drama*/
+  color: var(--drama) !important
+}
+.list-table-data .data.genre span a[href*="&genre=10"] {/*Fantasy*/
+  color: var(--fantasy) !important;
+}
+.list-table-data .data.genre span a[href*="&genre=14"] {/*Horror*/
+  color: var(--horror) !important
+}
+.list-table-data .data.genre span a[href*="&genre=22"] {/*Romance*/
+  color: var(--romance) !important
+}
+.list-table-data .data.genre span a[href*="&genre=24"] {/*Sci-Fi*/
+  color: var(--sci-fi) !important
+}
+.list-table-data .data.genre span a[href*="&genre=26"] {/*Yuri*/
+  color: var(--yuri) !important
+}
+.list-table-data .data.genre span a[href*="&genre=28"] {/*Yaoi*/
+  color: var(--yaoi) !important
+}
+.list-table-data .data.genre span a[href*="&genre=30"] {/*Sports*/
+  color: var(--sports) !important
+}
+.list-table-data .data.genre span a[href*="&genre=36"] {/*Slice of Life*/
+  color: var(--sliceoflife) !important
+}
+.list-table-data .data.genre span a[href*="&genre=36"] {/*Supernatural*/
+  color: var(--supernatural) !important
+}
+.list-table-data .data.genre span a[href*="&genre=41"] {/*Suspense*/
+  color: var(--suspense) !important
+}
+.list-table-data .data.genre span a[href*="&genre=36"] {/*Gourmet*/
+  color: var(--gourmet) !important
+}
