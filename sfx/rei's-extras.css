@@ -1,12 +1,15 @@
 /* 
-   Reiko14's Design Add-ons v0.1
-      For personal use only!     
++-----------------------------+
+|Reiko14's Design Addons v0.1 |
+|For Personal Use Only!       |
++-----------------------------+------------------------------------------+
+|                                                                        |
+|Requires:                                                               |
+|  * Valeriolyndon's Clarity Theme (works for both light and dark theme) |
+|  * Valeriolyndon's dataimagelinkbefore                                 |
+|                                                                        |
++------------------------------------------------------------------------+
 */
-/*====================================================================
-Requires: 
-  * Valeriolyndon's Clarity (works for both light and dark theme)
-  * Valeriolyndin's dataimagelinkbefore
-====================================================================*/
 
 @import "animated-gradient-border.css";
 @import "animated-background.css"
