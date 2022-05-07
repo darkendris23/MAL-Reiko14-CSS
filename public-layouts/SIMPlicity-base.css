@@ -112,7 +112,7 @@ body {
 .icon-menu.export,
 .icon-menu.logout,
 .icon-menu.setting {
-	background: none !important;
+	background: transparent !important;
 }
 
 .icon-menu.quick-add:hover,
