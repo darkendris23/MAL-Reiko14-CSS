@@ -112,6 +112,15 @@ body {
 .icon-menu.export,
 .icon-menu.logout,
 .icon-menu.setting {
+	background: none !important;
+}
+
+.icon-menu.quick-add:hover,
+.icon-menu.anime-list:hover,
+.icon-menu.manga-list:hover,
+.icon-menu.export:hover,
+.icon-menu.logout:hover,
+.icon-menu.setting:hover {
 	background: #0e283f !important;
 }
 
