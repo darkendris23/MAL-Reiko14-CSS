@@ -1,0 +1,248 @@
+:root {
+  --cover:url("https://wallpapercave.com/wp/wp5134476.jpg");
+  --avatar:url("https://i.pinimg.com/originals/13/bc/93/13bc93c9698c82f762d064dcb6033145.gif");
+  --avatar-border:url("https://64.media.tumblr.com/098ecc0e2216f77e1841b01f645aa54a/072b204d6bbe468f-0c/s500x750/dbd13241ebc03eee09df6f40c08cef6286746a7a.gifv");
+}
+#status-menu {
+  background: transparent !important;
+  border: none;
+  min-width: 1060px;
+  width: 100%;
+}
+.status-menu {
+  background: black;
+  border-radius: 25px !important;
+  font-size: 100%;
+}
+
+#status-menu.fixed {
+  background: #000 !important;
+  border: none;
+}
+
+#status-menu.fixed .status-menu {
+  border: none;
+}
+#list-container.list-container {
+  position: static;
+  width: 100%;
+  background: none !important;
+  border: none;
+  display: inline;
+}
+body {
+  background-image: linear-gradient(to bottom,#0e283f,#000) !important;
+  background-position: center calc(30em - 1px);
+}
+.header {
+  background-image:var(--cover) !important;
+  height: 30em;
+  border: none;
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  min-width: 1060px !important;
+}
+.header-title {
+  left: calc(50% - 120px) !important;
+  right: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  bottom: 5px !important;
+  top: auto !important;
+}
+
+.header-menu, .list-status-title, .list-stats {
+  display: none !important;
+}
+
+.list-block {
+  margin-top: 10px !important;
+}
+
+.list-table-header {
+  visibility: hidden;
+  height: 0px !important;
+}
+
+.list-table {
+  margin-bottom: 5px;
+  border: none !important;
+}
+
+.list-menu-float {
+  position: absolute;
+  border: none !important;
+  top: 7em;
+  left: 14em;
+  margin-bottom: -50px;
+}
+
+.icon-menu span.text {
+  background: #0e283f;
+  height: 25px !important;
+  margin-left: -1em;
+  padding-left: 1em;
+  padding-top: 5px;
+  left: 2em !important;
+  top: 0em !important;
+  border-radius: 0px 25px 25px 0px;
+  z-index:-1;
+}
+
+.icon-menu.setting:hover span.text {
+  width: 220px !important;
+}
+.icon-menu span.text .link-list-setting, .icon-menu span.text .link-style-setting {
+  height: 3em !important;
+  margin-top: -10px !important;
+  background: none !important;
+}
+
+.icon-menu span.text .link-list-setting {
+  margin-left: -1em;
+  padding-left: 1em;
+}
+.icon-menu span.text .link-list-setting:hover, .icon-menu span.text .link-style-setting:hover {
+  background: #000F26 !important;
+}
+.icon-menu span.text .link-style-setting {
+  top: 0px !important;
+  left: 8em;
+  width: 113px !important;
+}
+
+.icon-menu.quick-add, .icon-menu.anime-list, .icon-menu.manga-list, .icon-menu.export, .icon-menu.logout,.icon-menu.setting {
+  background: #0e283f !important;
+}
+
+.icon-menu.quick-add {
+  left: -4em;
+  top: 0.4em;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+.icon-menu.quick-add svg {
+  left: 5px !important;
+  top: 3px !important;
+  margin: 0px !important;
+  position: absolute;
+  transform: scale(0.7);
+}
+
+.icon-menu.anime-list {
+  left: -1.7em;
+  top: -0.2em;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+.icon-menu.anime-list svg {
+  left: 5px !important;
+  top: 3px !important;
+  margin: 0px !important;
+  position: absolute;
+  transform: scale(0.7);
+}
+
+.icon-menu.manga-list {
+  left: -0.5em;
+  top: -0.2em;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+.icon-menu.manga-list svg {
+  left: 5px !important;
+  top: 3px !important;
+  margin: 0px !important;
+  position: absolute;
+  transform: scale(0.7);
+}
+
+.icon-menu.profile {
+  position: absolute;
+  background-image: var(--avatar) !important;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 3px solid #0080ff;
+  margin: 1em;
+  left: -13em;
+  top: calc(50% - 6em);
+}
+
+.icon-menu.profile:before {
+  content:"";
+  display: block;
+  width: 12em;
+  height: 12em;
+  background-image: var(--avatar-border);
+  position: relative;
+  border-radius: 50%;
+  margin: -1.3em;
+  z-index:-1;
+  border: 3px solid #0080ff;
+}
+
+.icon-menu.export {
+  left: -0.3em;
+  top: 0em;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+.icon-menu.export svg {
+  left: 5px !important;
+  top: 3px !important;
+  margin: 0px !important;
+  position: absolute;
+  transform: scale(0.7);
+}
+
+.list-menu-float form, .icon-menu.logout  {
+  left: -1.2em;
+  top: 0.1em;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+.icon-menu.logout svg {
+  left: 6px !important;
+  top: 6px !important;
+  margin: 0px !important;
+  position: absolute;
+  transform: scale(0.7);
+}
+
+.icon-menu.setting {
+  left: -3.3em;
+  top: -.3em;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+
+.icon-menu.setting svg {
+  left: 5px !important;
+  top: 4px !important;
+  margin: 0px !important;
+  position: absolute;
+  transform: scale(0.7);
+}
+
+.icon-menu.history {
+  display: none;
+}
+
+#recaptcha-terms {
+  display: none;
+}
+
+#copyright:after {
+  content:"\aThis theme is a W.I.P of Reiko14";
+  white-space: pre;
+}
+
+#
