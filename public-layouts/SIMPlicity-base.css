@@ -50,8 +50,8 @@ Changelog:
 
 /*++ Body*/
 body {
-	background-image: var(--bg) !important;
-	background-position: center calc(30em - 1px);
+	background: #0e283f, var(--bg) !important;
+	background-position: center top, center calc(30em - 1px);
 }
 
 #status-menu {
