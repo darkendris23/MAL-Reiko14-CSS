@@ -24,7 +24,7 @@ Changelog:
 
 /*++ Header*/
 .header {
-	background-image: #0e283f, var(--cover) !important;
+	background-image: var(--cover) !important;
 	height: 30em;
 	border: none;
 	width: 100%;
