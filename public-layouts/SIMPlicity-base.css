@@ -24,7 +24,7 @@ Changelog:
 
 /*++ Header*/
 .header {
-	background-image: var(--cover) !important;
+	background-image: #0e283f, var(--cover) !important;
 	height: 30em;
 	border: none;
 	width: 100%;
@@ -50,8 +50,8 @@ Changelog:
 
 /*++ Body*/
 body {
-	background: #0e283f, var(--bg) !important;
-	background-position: center top, center calc(30em - 1px);
+	background-image: var(--bg) !important;
+	background-position:  center calc(30em - 1px);
 }
 
 #status-menu {
