@@ -18,7 +18,7 @@ Changelog:
 :root {
   --bg: linear-gradient(to bottom, #0e283f, #000);
 	--cover: url("https://wallpapercave.com/wp/wp5134476.jpg");
-	--avatar: url("https://i.pinimg.com/originals/13/bc/93/13bc93c9698c82f762d064dcb6033145.gif");
+	--avatar: url("https://animesher.com/orig/1/130/1301/13019/animesher.com_yato-yatogami-gif-1301992.gif");
 	--avatar-border: url("https://64.media.tumblr.com/098ecc0e2216f77e1841b01f645aa54a/072b204d6bbe468f-0c/s500x750/dbd13241ebc03eee09df6f40c08cef6286746a7a.gifv");
 }
 
@@ -96,6 +96,32 @@ body {
 .list-table {
 	margin-bottom: 5px;
 	border: none !important;
+}
+
+.status-menu {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+.search-container {
+  position: relative !important;
+  right: 0px !important;
+}
+
+#search-box input {
+  border: none !important;
+  border-radius: 0px !important;
+  background: #0e283f !important;
+  color: #fff;
+}
+
+.list-table {
+  border-collapse: unset !important;
+  flex-flow: column wrap;
+  align-content: stretch;
+}
+
+.list-table .list-table-data .data {
+  border: none !important;
 }
 
 /*-- Floating Menu*/
