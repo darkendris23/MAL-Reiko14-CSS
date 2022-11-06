@@ -24,7 +24,7 @@ Changelog:
 
 /*++ Header*/
 .header {
-	background-image: var(--cover) !important;
+	background-image: url(https://github.com/darkendris23/MAL-Reiko14-CSS/blob/main/sfx/solid-color-image.png), var(--cover) !important;
 	height: 30em;
 	border: none;
 	width: 100%;
