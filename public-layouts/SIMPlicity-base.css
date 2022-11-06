@@ -16,8 +16,8 @@ Changelog:
 
 /*++ Root*/
 :root {
-  --bg: linear-gradient(to bottom, #0e283f, #000);
-	--cover: url("https://wallpapercave.com/wp/wp5134476.jpg");
+	--bg: linear-gradient(to bottom, #0e283f, #000);
+	
 	--avatar: url("https://animesher.com/orig/1/130/1301/13019/animesher.com_yato-yatogami-gif-1301992.gif");
 	--avatar-border: url("https://64.media.tumblr.com/098ecc0e2216f77e1841b01f645aa54a/072b204d6bbe468f-0c/s500x750/dbd13241ebc03eee09df6f40c08cef6286746a7a.gifv");
 }
