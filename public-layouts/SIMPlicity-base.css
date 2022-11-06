@@ -24,7 +24,7 @@ Changelog:
 
 /*++ Header*/
 .header {
-	background-image: var(--cover), url(https://imgur.com/k7qMI76.png) !important;
+	background-image: var(--cover), linear-gradient(to bottom, #0e283f, #0e283f) !important;
 	height: 30em;
 	border: none;
 	width: 100%;
