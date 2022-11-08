@@ -16,9 +16,9 @@ Changelog:
 
 /*++ Root*/
 :root {
-	--primary: #0e283f
-	--secondary: none
-	--black: #000
+	--primary: #0e283f;
+	--secondary: none;
+	--black: #000;
 	--bg: linear-gradient(to bottom, #0e283f, #000);
 	--cover: url("https://wallpapercave.com/wp/wp5134476.jpg");
 	--avatar: url("https://animesher.com/orig/1/130/1301/13019/animesher.com_yato-yatogami-gif-1301992.gif");
@@ -111,10 +111,9 @@ body {
 }
 
 #search-box input {
-  border: none !important;
-  border-radius: 0px !important;
-  background: #0e283f !important;
+  background: #000 !important;
   color: #fff;
+  outline: none !important;
 }
 
 .list-table {
