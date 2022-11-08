@@ -16,6 +16,7 @@ Changelog:
 
 /*++ Root*/
 :root {
+	--primary: #0e283f
 	--bg: linear-gradient(to bottom, #0e283f, #000);
 	--cover: url("https://wallpapercave.com/wp/wp5134476.jpg");
 	--avatar: url("https://animesher.com/orig/1/130/1301/13019/animesher.com_yato-yatogami-gif-1301992.gif");
@@ -148,6 +149,15 @@ body {
 .icon-menu.logout:hover,
 .icon-menu.setting:hover {
 	background: #0e283f !important;
+}
+
+.icon-menu.quick-add:hover .text,
+.icon-menu.anime-list:hover .text,
+.icon-menu.manga-list:hover .text,
+.icon-menu.export:hover .text,
+.icon-menu.logout:hover .text,
+.icon-menu.setting:hover .text {
+	color: cyan !important;
 }
 
 .icon-menu span.text {
@@ -302,7 +312,8 @@ body {
 
 .icon-menu span.text .link-list-setting:hover,
 .icon-menu span.text .link-style-setting:hover {
-	background: #000F26 !important;
+	background: #0e283f !important;
+	color: cyan !important;
 }
 
 .icon-menu span.text .link-style-setting {
