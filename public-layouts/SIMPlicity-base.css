@@ -548,7 +548,6 @@ body {
 }
 
 /*@@ Excluded Functions*/
-.add-edit-more,
 .icon-watch2 {
   display: none !important;
 }
