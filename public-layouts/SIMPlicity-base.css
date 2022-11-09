@@ -39,10 +39,10 @@ Search Tags:
 .header-title {
   left: calc(50% - 120px) !important;
   right: auto !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
   bottom: 5px !important;
   top: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .header-menu,
@@ -127,8 +127,8 @@ body {
 .list-table-data {
   display: grid !important;
   height: 200px;
-  grid-template-columns: repeat( auto-fill, 20px);
-  grid-template-rows: repeat( auto-fill, 20px);
+  grid-template-columns: repeat(auto-fill, 20px);
+  grid-template-rows: repeat(auto-fill, 20px);
 }
 
 .list-table .list-table-data .data {
@@ -168,7 +168,6 @@ body {
   grid-row: 3;
 }
 
-
 .data.type {
   grid-column: 2/5;
   grid-row: 6;
@@ -187,9 +186,9 @@ body {
 
 /*@@ Element Design*/
 .list-table .list-table-data .data.image .image {
-    width: 60px;
-    height: 85px;
-    border: black 2px solid
+  width: 60px;
+  height: 85px;
+  border: black 2px solid;
 }
 
 .data.status {
@@ -199,13 +198,13 @@ body {
 }
 
 .data.status:before {
-  content:"Status: ";
+  content: "Status: ";
   color: white;
   font-weight: bold;
 }
 
 .data.status:after {
-  content:"⬤";
+  content: "⬤";
 }
 
 .data.number {
@@ -218,7 +217,7 @@ body {
 }
 
 .data.title.clearfix {
-  Position: relative;
+  position: relative;
   padding: 0px !important;
   background: white;
   top: 3px !important;
@@ -230,9 +229,9 @@ body {
 }
 
 .data.progress:before {
-  content:"👁";
+  content: "👁";
   font-size: 14px;
-  Position: relative;
+  position: relative;
 }
 
 .data.progress {
@@ -241,54 +240,56 @@ body {
 }
 
 .data.score:before {
-  content:"★";
-  font-size:13px;
+  content: "★";
+  font-size: 13px;
   font-weight: bold;
 }
 
 .data.score:after {
-  content:"hi";
+  content: "hi";
   height: 20px;
   width: 220px;
-  color:#222;
-  background:#222;
+  color: #222;
+  background: #222;
   display: block;
-  Position:relative;
-  top:-17px;
+  position: relative;
+  top: -17px;
   left: -150px;
   z-index: -3;
-  border-bottom-right-radius:20px;
+  border-bottom-right-radius: 20px;
 }
 
 /*@@ Modifiers*/
 
 .data.title .link {
-    overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 1; /* number of lines to show */
-           line-clamp: 1; 
-   -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
-.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching {
-    color: #2db039;
+.list-table .list-table-data .data.status.reading,
+.list-table .list-table-data .data.status.watching {
+  color: #2db039;
 }
 
-.list-table .list-table-data .data.status.plantoread, .list-table .list-table-data .data.status.plantowatch {
-    color: #c3c3c3;
+.list-table .list-table-data .data.status.plantoread,
+.list-table .list-table-data .data.status.plantowatch {
+  color: #c3c3c3;
 }
 
 .list-table .list-table-data .data.status.completed {
-    color: #26448f;
+  color: #26448f;
 }
 
 .list-table .list-table-data .data.status.onhold {
-    color: #f1c83e;
+  color: #f1c83e;
 }
 
 .list-table .list-table-data .data.status.dropped {
-    color: #a12f31;
+  color: #a12f31;
 }
 
 /*-- Floating Menu*/
@@ -503,10 +504,13 @@ body {
 }
 
 /*@@ Excluded Functions*/
-.add-edit-more, .icon-watch2  {
+.add-edit-more,
+.icon-watch2 {
   display: none !important;
 }
 
-.airing-started, .airing-finished, .genre {
+.airing-started,
+.airing-finished,
+.genre {
   display: none !important;
 }
