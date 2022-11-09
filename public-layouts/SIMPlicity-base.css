@@ -508,9 +508,3 @@ body {
 .icon-watch2 {
   display: none !important;
 }
-
-.airing-started,
-.airing-finished,
-.genre {
-  display: none !important;
-}
