@@ -8,13 +8,13 @@
 └───────────────────────────────────────────*/
 
 /*============================================
-Changelog:
--Version 0.1
-  + Changed some styles for header, list, body, floating tab, and status menu.
-  - Less Configurable
+Search Tags:
+++ Main Category (Header, Body, and Footer)
+-- Sub-categories
+@@ Extras
 ============================================*/
 
-/*++ Root*/
+/*++ Variables*/
 :root {
   --primary: #0e283f;
   --secondary: none;
@@ -79,6 +79,21 @@ body {
   border: none;
 }
 
+.status-menu {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+.search-container {
+  position: relative !important;
+  right: 0px !important;
+}
+
+#search-box input {
+  background: #000 !important;
+  color: #fff;
+  outline: none !important;
+}
+
 #list-container.list-container {
   position: static;
   width: 100%;
@@ -97,33 +112,183 @@ body {
 }
 
 .list-table {
+  display: grid;
   margin-bottom: 5px;
   border: none !important;
-}
-
-.status-menu {
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.search-container {
-  position: relative !important;
-  right: 0px !important;
-}
-
-#search-box input {
-  background: #000 !important;
-  color: #fff;
-  outline: none !important;
-}
-
-.list-table {
+  grid-template-columns: repeat(3, 33%);
+  gap: 5px;
   border-collapse: unset !important;
-  flex-flow: column wrap;
-  align-content: stretch;
+}
+
+.list-table > *:not(.list-item) {
+  order: 10000;
+}
+
+.list-table-data {
+  display: grid !important;
+  height: 200px;
+  grid-template-columns: repeat( auto-fill, 20px);
+  grid-template-rows: repeat( auto-fill, 20px);
 }
 
 .list-table .list-table-data .data {
   border: none !important;
+}
+
+/*-- Anime Info Design*/
+/*@@ Position in Grid*/
+.data.image {
+  grid-column: 1/5;
+  grid-row: 1/6;
+}
+
+.data.number {
+  grid-column: 4/7;
+  grid-row: 2;
+}
+
+.data.title.clearfix {
+  grid-column: 7/17;
+  grid-row: 2;
+}
+
+.data.status {
+  grid-column: 5/8;
+  grid-row: 3;
+  justify-self: left;
+}
+
+.data.progress {
+  grid-column: 8/12;
+  grid-row: 3;
+}
+
+.data.score {
+  grid-column: 12/15;
+  grid-row: 3;
+}
+
+
+.data.type {
+  grid-column: 2/5;
+  grid-row: 6;
+}
+
+.data.studio {
+  grid-column: 5/16;
+  grid-row: 4;
+  justify-self: left;
+}
+
+.data.rated {
+  grid-column: 2/5;
+  grid-row: 7;
+}
+
+/*@@ Element Design*/
+.list-table .list-table-data .data.image .image {
+    width: 60px;
+    height: 85px;
+    border: black 2px solid
+}
+
+.data.status {
+  width: 100% !important;
+  background: none !important;
+  margin-left: -5px;
+}
+
+.data.status:before {
+  content:"Status: ";
+  color: white;
+  font-weight: bold;
+}
+
+.data.status:after {
+  content:"⬤";
+}
+
+.data.number {
+  font-weight: bold;
+  font-size: 12px;
+  background: black;
+  padding-bottom: 20px !important;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  z-index: -1;
+}
+
+.data.title.clearfix {
+  Position: relative;
+  padding: 0px !important;
+  background: white;
+  top: 3px !important;
+  padding-top: 2px !important;
+  padding-left: 10px !important;
+  margin-left: -14px !important;
+  z-index: -2;
+  clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
+}
+
+.data.progress:before {
+  content:"👁";
+  font-size: 14px;
+  Position: relative;
+}
+
+.data.progress {
+  display: flex !important;
+  justify-self: center !important;
+}
+
+.data.score:before {
+  content:"★";
+  font-size:13px;
+  font-weight: bold;
+}
+
+.data.score:after {
+  content:"hi";
+  height: 20px;
+  width: 220px;
+  color:#222;
+  background:#222;
+  display: block;
+  Position:relative;
+  top:-17px;
+  left: -150px;
+  z-index: -3;
+  border-bottom-right-radius:20px;
+}
+
+/*@@ Modifiers*/
+
+.data.title .link {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+           line-clamp: 1; 
+   -webkit-box-orient: vertical;
+}
+
+.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching {
+    color: #2db039;
+}
+
+.list-table .list-table-data .data.status.plantoread, .list-table .list-table-data .data.status.plantowatch {
+    color: #c3c3c3;
+}
+
+.list-table .list-table-data .data.status.completed {
+    color: #26448f;
+}
+
+.list-table .list-table-data .data.status.onhold {
+    color: #f1c83e;
+}
+
+.list-table .list-table-data .data.status.dropped {
+    color: #a12f31;
 }
 
 /*-- Floating Menu*/
@@ -335,4 +500,13 @@ body {
 #copyright:after {
   content: "\aThis theme is a W.I.P of Reiko14";
   white-space: pre;
+}
+
+/*@@ Excluded Functions*/
+.add-edit-more, .icon-watch2  {
+  display: none !important;
+}
+
+.airing-started, .airing-finished, .genre {
+  display: none !important;
 }
