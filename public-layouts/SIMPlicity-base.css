@@ -258,8 +258,37 @@ body {
   clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
 }
 
+.list-table .list-table-data .data.title .add-edit-more .edit {
+  position: relative;
+  top: -16px;
+  left: 30px;
+}
+
+.list-table .list-table-data .data.title .add-edit-more .edit a:link {
+  color: white !important;
+}
+
+.list-table .list-table-data .data.title .add-edit-more .edit:after {
+  position: absolute;
+  display: inline;
+  font-family: font_awesome_6_freesolid;
+  content:"\f304";
+  top: -3px;
+  right: 1px;
+  width:16px;
+  height:16px;
+  text-align: center;
+  pointer-events: none;
+  color: black !important;
+  font-size: 13px;
+}
+
+.list-table .list-table-data .data.title .add-edit-more:hover .edit:after {
+  color: gray !important;
+}
+
 .data.progress:before {
-  content: "👁";
+  content: "\f06e ";
   font-size: 14px;
   position: relative;
 }
@@ -270,7 +299,7 @@ body {
 }
 
 .data.score:before {
-  content: "★";
+  content: "\f005";
   font-size: 13px;
   font-weight: bold;
 }
@@ -290,7 +319,7 @@ body {
 }
 
 .data.progress span:only-of-type:after {
-  content:" ✓";
+  content:" \f00c";
   color: cyan;
 }
 
