@@ -19,9 +19,9 @@ Search Tags:
 /*++ Variables*/
 :root {
   --primary: #0e283f;
-  --secondary: none;
+  --secondary: navy;
   --black: #000;
-  --bg: linear-gradient(to bottom, #0e283f, cyan);
+  --bg: linear-gradient(to bottom, var(--primary), var(--secondary));
   --cover: url("https://wallpapercave.com/wp/wp5134476.jpg");
   --avatar: url("https://animesher.com/orig/1/130/1301/13019/animesher.com_yato-yatogami-gif-1301992.gif");
   --avatar-border: url("https://64.media.tumblr.com/098ecc0e2216f77e1841b01f645aa54a/072b204d6bbe468f-0c/s500x750/dbd13241ebc03eee09df6f40c08cef6286746a7a.gifv");
@@ -29,7 +29,7 @@ Search Tags:
 
 /*++ Header*/
 .header {
-  background-image: var(--cover), linear-gradient(to bottom, #0e283f, #0e283f) !important;
+  background-image: var(--cover), linear-gradient(to bottom, var(--primary), var(--primary)) !important;
   height: 30em;
   border: none;
   width: 100%;
