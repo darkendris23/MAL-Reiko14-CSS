@@ -294,7 +294,9 @@ body {
 .data.progress:before {
   font-family: font_awesome_6_freesolid;
   content: "\f06e ";
-  font-size: 14px;
+  font-size: 10px !important;
+  padding-top: 1px !important;
+  padding-right: 4px !important;
   position: relative;
 }
 
