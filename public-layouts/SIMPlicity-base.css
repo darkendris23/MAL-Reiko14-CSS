@@ -308,8 +308,7 @@ body {
 .data.score:before {
   font-family: font_awesome_6_freesolid;
   content: "\f005";
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 12px;
 }
 
 .data.score:after {
