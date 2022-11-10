@@ -268,10 +268,6 @@ body {
   left: 30px;
 }
 
-.list-table .list-table-data .data.title .add-edit-more .edit a:link {
-  color: white !important;
-}
-
 .list-table .list-table-data .data.title .add-edit-more .edit:after {
   position: absolute;
   display: inline;
@@ -352,6 +348,10 @@ body {
   -webkit-line-clamp: 1; /* number of lines to show */
   line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+
+.list-table .list-table-data .data.title .add-edit-more .edit a:link, .list-table .list-table-data .data.title .add-edit-more .edit a:visited, .list-table .list-table-data .data.title .add-edit-more .edit a:hover, .list-table .list-table-data .data.title .add-edit-more .edit a:active {
+  color: white !important;
 }
 
 .list-table .list-table-data .data.status.reading,
