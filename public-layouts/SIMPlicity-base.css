@@ -258,6 +258,10 @@ body {
   clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
 }
 
+.data.title .link {
+  padding-right: 30px;
+}
+
 .list-table .list-table-data .data.title .add-edit-more .edit {
   position: relative;
   top: -16px;
