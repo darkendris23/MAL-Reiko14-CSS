@@ -153,7 +153,7 @@ body {
 }
 
 .data.number {
-  grid-column: 4/7;
+  grid-column: 5/7;
   grid-row: 2;
 }
 
@@ -240,7 +240,9 @@ body {
   background: black;
   padding-bottom: 20px !important;
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  z-index: -1;
+  margin-left: -10px !important;
+  padding-right: 10px !important;
+  z-index: 1;
 }
 
 .data.title.clearfix {
@@ -251,7 +253,6 @@ body {
   padding-top: 2px !important;
   padding-left: 10px !important;
   margin-left: -14px !important;
-  z-index: -2;
   clip-path: polygon(0 0, 91% 0, 100% 100%, 0% 100%);
 }
 
