@@ -583,6 +583,14 @@ body {
   display: none;
 }
 
+#footer-block {
+  background: rgb(33,33,34);
+  background: -moz-linear-gradient(180deg, rgba(33,33,34,1) 0%, rgba(9,9,121,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(33,33,34,1) 0%, rgba(9,9,121,1) 100%);
+  background: linear-gradient(180deg, rgba(33,33,34,1) 0%, rgba(9,9,121,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212122",endColorstr="#090979",GradientType=1);
+}
+
 #copyright:after {
   content: "\aThis theme is a W.I.P of Reiko14";
   white-space: pre;
