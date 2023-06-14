@@ -38,6 +38,18 @@ Search Tags:
   min-width: 1060px !important;
 }
 
+.header .header-menu {
+  display: block !important;
+  position: absolute;
+  top: 270px;
+  left: 10px;
+}
+
+.header .header-menu .btn-menu {
+  position: relative;
+  text-align: left;
+}
+
 .header-title {
   left: calc(50% - 120px) !important;
   right: auto !important;
@@ -83,6 +95,10 @@ body {
 
 .status-menu {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+.status-menu-container {
+  z-index: 999 !important;
 }
 
 .search-container {
@@ -339,6 +355,25 @@ body {
 
 .data.airing-finished:after {
   content:"| Finished";
+}
+
+.data.genre {
+  background: #111;
+  margin: 0px 5px 5px 0px;
+  border-radius: 5px;
+}
+
+.data.genre a:link {
+  
+}
+
+.data.tags {
+  grid-column: 2/8;
+  grid-row: 6/11;
+}
+
+.data.tags .edit {
+  display: none !important;
 }
 
 /*@@ Modifiers*/
