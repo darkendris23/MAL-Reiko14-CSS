@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pixel Emulator';
+    src: url('PixelEmulator.woff2') format('woff2'),
+        url('PixelEmulator.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
